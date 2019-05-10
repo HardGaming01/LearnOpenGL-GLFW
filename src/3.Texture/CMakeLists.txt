@@ -1,5 +1,9 @@
-set(SRC_FILES Main.cpp ../glad.c)
+set(SRC_FILES Texture.cpp ../glad.c)
 
-add_executable(Stub ${SRC_FILES})
-target_link_libraries(Stub ${GLFW_LIBRARIES})
-target_link_libraries(Stub ${GLEW_LIBRARIES})
+file(COPY shader
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY Assets
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+
+add_executable(Texture ${SRC_FILES})
+target_link_libraries(Texture ${GLFW_LIBRARIES})
