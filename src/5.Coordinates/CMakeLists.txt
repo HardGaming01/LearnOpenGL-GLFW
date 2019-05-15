@@ -5,5 +5,5 @@ file(COPY shader
 file(COPY Assets
         DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
-add_executable(Coordinates ${SRC_FILES})
-target_link_libraries(Coordinates ${GLFW_LIBRARIES} GLAD)
+add_executable(5.Coordinates ${SRC_FILES})
+target_link_libraries(5.Coordinates ${GLFW_LIBRARIES} GLAD)

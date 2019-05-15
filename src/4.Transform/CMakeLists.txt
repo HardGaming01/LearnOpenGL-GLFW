@@ -5,5 +5,5 @@ file(COPY shader
 file(COPY Assets
         DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
-add_executable(Transform ${SRC_FILES})
-target_link_libraries(Transform ${GLFW_LIBRARIES} GLAD)
+add_executable(4.Transform ${SRC_FILES})
+target_link_libraries(4.Transform ${GLFW_LIBRARIES} GLAD)
