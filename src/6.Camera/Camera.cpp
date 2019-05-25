@@ -227,10 +227,7 @@ void renderUpdate(Shader &shaderProgram, unsigned int *VAO, int texture1, int te
 
     // set transform
     glBindVertexArray(*VAO);
-
-    float radius = 10.0f;
-    float camX = sin(glfwGetTime()) * radius;
-    float camZ = cos(glfwGetTime()) * radius;
+    
     glm::mat4 view;
     view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
     glm::mat4 projection;

@@ -29,7 +29,7 @@ int main()
 
     unsigned int VAO[2], VBO[2], EBO;
 
-    Shader ourShader("shader/shader.vs", "shader/shader.fs");
+    Shader ourShader("./shader/shader.vs", "./shader/shader.fs");
     renderInit(VAO, VBO, &EBO);
 
     // render loop
